@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Search</title>
+	<meta charset="utf-8">
+	<link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+	</script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js">
+	</script>
+	<style type="text/css">
+	
+	
+	
+body {
+    background-color: #62725D;
+}	
+
+#srch {
+    position: absolute;
+    top: 40px;
+}
+
+
+
+article{
+    min-height: 300px;
+    width: 200px;
+    background-color: #eee;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border: 1px #472401 dashed;
+    position: relative;
+    padding: 15px 6px 5px 6px;
+    margin: 5% 6px 5px 6px;
+    color: #4C4C4C;
+    font-family: verdana;
+    font-size: 9pt;
+    line-height: 1.4;
+    float: left;
+    box-shadow: 10px 10px 5px #000;
+
+}
+
+
+
+.column {
+/*     visibility: hide; */
+  /* required for the fadein */ 
+  display:none;
+
+}
+.prntRcrds {
+    font-family: verdana;
+    font-size: 9pt;
+    line-height: 1.4;
+    clear: both;
+    padding-top: 20px;
+    padding-left: 20px;
+/* 
+    position: relative;
+    
+    float: none;
+
+ */
+}
+h1{
+    /* font-family: verdana; */
+    font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 9pt;
+}
+h1.children{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top:0px;
+    margin-bottom:6px;
+
+}
+hr {
+width: 80%;
+}
+
+a{
+text-decoration:none;
+}
+.offspring {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    margin-top:0px;
+    margin-bottom:2px;
+}
+
+	</style>
+</head>
+<body>
+<div id="main">
+<a href="#" id="testLink" name="gen5rec1" onClick="assembColumn(this.name);">test link</a>
+	<form id="srch">
+		<input name="searchbox" id="searchField" onfocus="javascript:$(this).autocomplete('search','');">
+		<input type="hidden" id="project-id">
+	</form>
+	
+</div>	
+<div class="prntRcrds">
+</div>
+
+<!-- Pull in Genealogy Object DB -->
+	<script src="treeDB.js">
+	</script>
+
+
+	<script>
+
+/***************************************/
+/* START clear search field on focus and blur */
+
+$(document).ready(function() {
+    $('#srch').show();//Initial article needs to be shown as it has the search field
+    $('input#searchField').on('focus', function() {
+        // On first focus, check to see if we have the default text saved
+        // If not, save current value to data()
+        if (!$(this).data('defaultText')) $(this).data('defaultText', $(this).val());
+
+        // check to see if the input currently equals the default before clearing it
+        if ($(this).val()==$(this).data('defaultText')) $(this).val('');
+    });
+    $('input#searchField').on('blur', function() {
+        // on blur, if there is no value, set the defaultText
+        if ($(this).val()=='') $(this).val($(this).data('defaultText')); 
+    });
+});
+
+/* END clear search field on focus and blur */
+/***************************************/
+ /*
+code source
+http://api.jqueryui.com/autocomplete/
+*/
+/***************************************/
+/* START write records to page to make it easier to edit the data without creating dublipcate records etc 
+    This section would normally be commented out
+*/
+
+function printRecords(){
+//     alert('here');
+    var allRecords = [];
+        for (var key in treeDB) {
+          if (treeDB.hasOwnProperty(key)) {
+            var tempRec = {
+                label:treeDB[key].person.name,
+                value:key
+                };
+                // alert(tempRec.value);
+             allRecords.push(tempRec);
+           }
+        }
+    return allRecords;
+}
+
+var curIDsAndNames = printRecords();
+
+curIDsAndNames.sort(function(a, b) { 
+  return a.id - b.id  ||  a.value.localeCompare(b.value);
+});
+
+var numRecs = curIDsAndNames.length;
+var curIDsAndNamesInnerHTML = '';
+for (var i = 0; i < numRecs; i++){
+    curIDsAndNamesInnerHTML += curIDsAndNames[i].value + ' ' + curIDsAndNames[i].label + '<br>';
+}
+
+jQuery('div.prntRcrds').html(curIDsAndNamesInnerHTML);
+
+/* END write records to page to make it easier to edit the data without creating dublipcate records etc */
+/***************************************/
+
+
+/***************************************/
+/* START create arrary of names and primary keys to pass to the autocomplete/search function */
+
+var tags = [];
+for (var key in treeDB) {
+  if (treeDB.hasOwnProperty(key)) {
+   //alert(treeDB[key].person.name + '|' + key);
+    var temp = {
+        label:treeDB[key].person.name,
+        value:key
+        };
+        //alert(temp.value);
+     tags.push(temp);
+   }
+}
+/* END create arrary of names and primary keys to pass to the autocomplete/search function */
+/***************************************/
+
+
+/***************************************/
+/* START jQuery autocomelete plugin */
+
+$(function() {
+
+    $( "#searchField" ).autocomplete({
+        
+      minLength: 1,
+      source: tags,
+      focus: function( event, ui ) {
+        $( "#searchField" ).val( ui.item.label );
+        return false;
+      },
+
+      select: function( event, ui ) {
+
+        $( "#searchField" ).val( ui.item.label);
+        $( "#project-id" ).val( ui.item.value );
+
+        /*** This seems to be where we would call a function to build the record. not too sure about rules and name space ***/
+        
+        assembColumn(ui.item.value);
+        
+        
+        
+        //alert(ui.item.value);
+        
+        
+        // converting keyvalue associated with persons name back to ref to main data object:
+        //alert(treeDB[ui.item.value].person.name);
+        return false;
+      }
+
+    })
+    .val('Type a name here')
+    .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+      return $( "<li>" )
+//      .append( "<a>" + item.label + "<br>" + item.value + "</a>" )
+        .append( "<a>" + item.label +  "</a>" )
+        .appendTo( ul );
+    };
+      
+  });
+/* END jQuery autocomelete plugin */
+/***************************************/
+
+/***************************************/
+/* START build the innerHTML for the new div   */
+
+// var primKey = 'gen3rec4';// temp static record to pass in for dev work
+
+function assembColumn(primKey,relation,callingRecID){
+
+    // alert('child, parent or spouse ' + relation);/* Defines behavior based on drilling backwards, forwards or replacing */
+
+    resetTree(primKey,relation,callingRecID);// Is this click a child, spouse or parent?
+
+    var personName = treeDB[primKey].person.name;
+
+    //Build spouces
+    var numSpouses = treeDB[primKey].spouses.length;
+    //alert('There are ' + numSpouses + ' Spouses');
+
+    var spousesHTML = '';
+    var spouseLookUp = '';
+    // the following twenty lines of code should be better understood in terms of the best way to capture undefined objects and properties
+    for (var i = 0; i < numSpouses; i++){ 
+        if (typeof treeDB[primKey].spouses[i].recordID === "undefined") {
+            // alert("spouse recordID is undefined");
+            spouseLookUp = 'false';
+        }
+        else{
+            spouseLookUp = treeDB[primKey].spouses[i].recordID;
+        }
+
+        if(spouseLookUp === 'false'){
+            spousesHTML = spousesHTML + '<h1></h1>';
+        }else{
+            if(typeof treeDB[spouseLookUp].person.name === "undefined"){
+                // alert('We don\'t have a record for spouseLookUp ' + spouseLookUp);
+            }else{
+                spousesHTML = spousesHTML + '<h1><a href="#" name="' + spouseLookUp + '"  onClick="assembColumn(this.name,\'spouse\',\'' + primKey + '\');">' + treeDB[spouseLookUp].person.name + '</a></h1>';
+            }
+        }         
+    }
+
+    //Build children
+    var numChildren = treeDB[primKey].children.length;
+    //alert('There are ' + numChildren + ' Children');
+
+    var childrenHTML = '';
+    var childLookUp = '';
+    for (var i = 0; i < numChildren; i++){ 
+        // update this code to capture undefined:
+        
+        if (typeof treeDB[primKey].children[i].recordID === "undefined") {
+            // alert("child recordID is undefined");
+            childLookUp = 'false';
+        }
+        else{
+            // alert(treeDB[primKey].children[i].recordID);
+            childLookUp = treeDB[primKey].children[i].recordID;
+        }
+        
+        if(childLookUp === 'false'){
+            childrenHTML = childrenHTML + '<h1></h1>';
+        }else{
+            if(typeof treeDB[childLookUp].person.name === "undefined"){
+                // alert('We don\'t have a record for childLookUp ' + childLookUp);
+            }else{
+                childrenHTML = childrenHTML + '<p class="offspring"><a href="#" name="' + childLookUp + '"  onClick="assembColumn(this.name,\'child\',\'' + primKey + '\');">' + treeDB[childLookUp].person.name + '</a></p>';        
+            }
+        }
+    }
+
+        var motherHTML;
+        if (typeof treeDB[primKey].person.mother === 'undefined') {
+            // alert("mother recordID is undefined");
+            motherLookUp = 'false';
+        }
+        else{
+            // alert('mother recordID is defined as: ' + treeDB[primKey].person.mother);
+            motherLookUp = treeDB[primKey].person.mother;
+        }
+        
+        if(motherLookUp === 'false'){
+            motherHTML = '<h1></h1>';
+        }else{
+            if(typeof treeDB[motherLookUp].person.name === 'undefined'){
+                // alert('We don\'t have a record for motherLookUp ' + motherLookUp);
+            }else{
+                // Mother Link
+                motherHTML  = '<a href="#" name="' + motherLookUp + '"  onClick="assembColumn(this.name,\'parent\',\'' + primKey + '\');">Mother</a>';
+            }
+        }
+
+        var fatherHTML;
+        if (typeof treeDB[primKey].person.father === 'undefined') {
+            // alert("father recordID is undefined");
+            fatherLookUp = 'false';
+        }
+        else{
+            // alert('Father recordID is defined as: ' + treeDB[primKey].person.father);
+            fatherLookUp = treeDB[primKey].person.father;
+        }
+        
+        if(fatherLookUp === 'false'){
+            fatherHTML = '<h1></h1>';
+        }else{
+            if(typeof treeDB[fatherLookUp].person.name === 'undefined'){
+                // alert('We don\'t have a record for fatherLookUp ' + fatherLookUp);
+            }else{
+                // father Link
+                fatherHTML  = '<a href="#" name="' + fatherLookUp + '"  onClick="assembColumn(this.name,\'parent\',\'' + primKey + '\');">Father</a>';
+            }
+        }
+
+
+    // Build Inner HTML:
+    
+
+    var innerHperson = '<article class="column" id="' + primKey + '"><header><h1>' + personName	+ '</h1>' + 'birthDeathDates' + '<p class="parents">' + motherHTML + ' ' + fatherHTML + ' | about</p></header>';
+    var innerHspouses = '<section class="spouse">' + spousesHTML;
+    var innerHchildren =  '</section><hr><footer><h1 class="children">Children</h1>' + childrenHTML + '</footer></article>';
+    var innerH = innerHperson + innerHspouses + innerHchildren;
+
+    if(primKey === 'gen0rec0'){
+        innerH = "<article class=\"column\"><header><h1>No record for this person</h1></header></article>";
+    }
+
+    var articleElementExists = true;
+    articleElementExists = isElement();
+
+    if((articleElementExists)&&(relation === 'child')){
+        $('article:last-child').after(innerH).siblings(":last").css('background-color', 'red').fadeIn();
+    }
+    else if((articleElementExists)&&(relation === 'parent')){
+//             $('#' + callingRecID).before(innerH).prev().css('background-color', '#00FFFF').fadeIn();
+            $('#' + callingRecID).before(innerH).prev().css('background-color', '#00FFFF').effect('shake', {times: 3, direction: 'left', distance: 3}, 1300);
+    }
+    else if((articleElementExists)&&(relation === 'spouse')){
+
+//         $('#srch').after(innerH).fadeIn();
+        $('#srch').after(innerH).siblings(":last").css('background-color', '#FF00FF').fadeIn();// pink
+      
+//        var articleElement = $('#' + primKey).closest('article');
+//        $(articleElement).after(innerH).fadeIn(slow);
+
+//        alert( "Index: " + $( "article" ).index( articleElement ) );    
+    }
+    else{
+//         $('#srch').after(innerH).fadeIn();
+        $('#srch').after(innerH).siblings(":last").fadeIn().css('background-color', '#FFFF00');
+        
+    }
+
+
+
+}
+
+function isElement(articleElementExists){
+   if($('article').length){
+        articleElementExists = true;
+   }else{
+        articleElementExists = false;   
+   }
+   // alert('article element exists. (i.e. this is from the search field if false:) ' + articleElementExists);
+   return articleElementExists;
+};
+
+function resetTree(primKey,relation,callingRecID){
+//     alert('in switch');
+
+    switch(relation){
+    
+    case "child":
+        // If it's a child link we need to remove all children that may have been inserted by previous user clicks UNLESS THE NEXT ARTICLE HAS THE SAME ID
+        $('#' + callingRecID).nextAll().remove();
+
+      break;
+
+    case "spouse":
+        // A spouse may have a different list of children and hopefully has different parents so clicking the spouse's name removes ancesters & decendants
+           $('#' + callingRecID).parent().find('article').remove();
+        // alert('this is a spouse link');
+      break;
+    
+    case "parent":        
+        $('#' + callingRecID).prevAll('article').remove();
+        // alert('should be gen5rec4: ' + callingRecID);
+        // $('#' + callingRecID).closest('article').css("background-color", "red");
+//         return false;
+      // alert('this is a parent link');
+      break;  
+    default:
+      // If initiating a new search, clear the previous articles:
+      $('.column').remove();
+    }
+    return true;
+};
+
+	</script>
+</body>
+</html>
