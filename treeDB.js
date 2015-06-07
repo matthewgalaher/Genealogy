@@ -909,8 +909,8 @@ gen2rec13 : {
                 married_location : 'Salem OR',
                 died_date : 'May 29, 1932',
                 died_location : 'Portland OR',
-                mother : 'gen0rec0',
-                father : 'gen0rec0',
+                mother : 'gen1rec16',
+                father : 'gen1rec2',
                 parents : 'gen1rec4',
                 about : ''
     },
@@ -2827,8 +2827,8 @@ gen6rec10 : {
                 married_location : '',
                 died_date : '',
                 died_location : '',
-                mother : 'gen0rec0',
-                father : 'gen0rec0',
+                mother : 'gen5rec10',
+                father : 'gen5rec35',
                 parents : 'gen5rec10',
                 about : ''
         },
@@ -2840,6 +2840,8 @@ gen6rec10 : {
         ],
         children : [
             {
+                name : 'Sage Christopher Ryan',
+                recordID : 'gen7rec2'            
             },
             {
                     },
@@ -3660,7 +3662,7 @@ gen5rec6 : {
                 died_date : '',
                 died_location : '',
                 mother : 'gen0rec0',
-                father : 'gen0rec0',
+                father : 'gen4rec2',
                 parents : 'gen4rec2',
                 about : ''
         },
@@ -3696,14 +3698,14 @@ gen5rec30 : {
 gen5rec15 : {
         person :             {
                 name : 'Wendy Menefee',
-                born_date : '',
+                born_date : 'May 23, 1956',
                 born_location : '',
                 married_date : '',
                 married_location : '',
-                died_date : '2014-02-09',
+                died_date : 'February 9, 2014',
                 died_location : '',
-                mother : 'gen0rec0',
-                father : 'gen0rec0',
+                mother : 'gen4rec19',
+                father : 'gen4rec3',
                 parents : 'gen4rec3',
                 about : ''
             },
@@ -3719,8 +3721,8 @@ gen5rec16 : {
                 married_location : '',
                 died_date : '',
                 died_location : '',
-                mother : 'gen0rec0',
-                father : 'gen0rec0',
+                mother : 'gen4rec19',
+                father : 'gen4rec3',
                 parents : 'gen4rec3',
                 about : ''
         },
@@ -3736,8 +3738,8 @@ gen5rec17 : {
                 married_location : '',
                 died_date : '',
                 died_location : '',
-                mother : 'gen0rec0',
-                father : 'gen0rec0',
+                mother : 'gen4rec19',
+                father : 'gen4rec3',
                 parents : 'gen4rec3',
                 about : ''
         },
@@ -3984,10 +3986,14 @@ gen6rec12 : {
     },
     spouses : [ {
         name : 'Jeff Millan',
-        recordID : 'gen0rec0'
+        recordID : 'gen6rec23'
     },
     ],
         children : [ {
+
+                name : 'Bowen Jane Millan',
+                recordID : 'gen7rec1'
+
 
         },
         {
@@ -4095,5 +4101,89 @@ gen6rec16 : {
         },
     ],
 },
+
+gen6rec23 : {
+    person : {
+        name : 'Jeff Millan',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen0rec0',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ {
+        name : 'Ellie Menefee',
+        recordID : 'gen6rec12'
+
+    },
+    ],
+        children : [ {
+
+        name : 'Millan',
+        recordID : 'gen7rec1'
+
+        },
+        {
+        },
+    ],
+},
+
+gen7rec1 : {
+    person : {
+        name : 'Bowen Jane Millan',
+        born_date : 'April 18 2015',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen6rec12',
+        father : 'gen6rec23',
+        about : ''
+    },
+    spouses : [ {
+
+
+    },
+    ],
+        children : [ {
+
+        },
+        {
+        },
+    ],
+},
+
+gen7rec2 : {
+    person : {
+        name : 'Sage Christopher Ryan',
+        born_date : 'February 19 2015',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen6rec10',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ {
+
+
+    },
+    ],
+        children : [ {
+
+        },
+        {
+        },
+    ],
+},
+
+
 
 }; /*closes treeDB object*/
