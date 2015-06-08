@@ -23,16 +23,13 @@ genxrecx : {
         about : ''
     },
     spouses : [ {
-        name : 'xxx',
         recordID : 'genxrecx'
     },
     ],
         children : [ {
-            name : 'xxx',
             recordID : 'genxrecx'
         },
         {
-            name : 'xxx',
             recordID : 'genxrecx'
         },
     ],
@@ -74,11 +71,9 @@ gen3rec4 : {
             },
         spouses : [
             {
-                name : 'Cornelia Cooke',
                 recordID : 'gen3rec10',
             },
             {
-                name : 'Ruth Ghiradelli',
                 recordID : 'gen3rec11',
             },
         ],
@@ -88,15 +83,12 @@ gen3rec4 : {
 //                 recordID : 'gen0rec0'
 //             },
             {
-                name : 'Lee Bruce Menefee',
                 recordID : 'gen4rec3'
             },
             {
-                name : 'Towner Miller Menefee',
                 recordID : 'gen4rec4'
             },
             {
-                name : 'Cornelia Menefee',
                 recordID : 'gen4rec1'
             },
 //             {
@@ -104,7 +96,6 @@ gen3rec4 : {
 //                 recordID : 'gen0rec0'
 //             },
             {
-                name : 'Margery',
                 recordID : 'gen4rec6'
             },
         ],
@@ -124,21 +115,17 @@ gen3rec10 : {
             },
         spouses : [
             {
-                name : 'Percy Lee Menefee',
                 recordID : 'gen3rec4',
             },
         ],
         children : [
             {
-                name : 'Lee Bruce Menefee',
                 recordID : 'gen4rec3'
             },
             {
-                name : 'Towner Miller Menefee',
                 recordID : 'gen4rec4'
             },
             {
-                name : 'Cornelia Menefee',
                 recordID : 'gen4rec1'
             },
         ],
@@ -174,7 +161,6 @@ gen3rec11 : {
         ],
         children : [
             {
-                name : 'Margery',
                 recordID : 'gen4rec6'
             },
         ],
@@ -194,45 +180,35 @@ gen4rec4 : {
             },
         spouses : [
             {
-                name : 'Libby Cronnin',     
                 recordID : 'gen4rec12'
             },
             {
-                name : 'Nancy James Zeppa',     
                 recordID : 'gen4rec13'
             },
         ],
         children : [
             {
-                name : 'Sally Menefee',
                 recordID : 'gen5rec7'
             },
             {
-                name : 'Cornelia Menefee',
                 recordID : 'gen5rec8'
             },
             {
-                name : 'Caroline Menefee',
                 recordID : 'gen5rec9'
             },
             {
-                name : 'Betsy Menefee',
                 recordID : 'gen5rec10'
             },
             {
-                name : 'John Menefee',
                 recordID : 'gen5rec11'
             },
             {
-                name : 'John Brian Menefee (died at two months)',
                 recordID : 'gen5rec12'
             },
             {
-                name : 'Christine Menefee',
                 recordID : 'gen5rec13'
             },
             {
-                name : 'Peter Menefee',
                 recordID : 'gen5rec14'
             },
         ],
@@ -252,7 +228,6 @@ gen4rec12 : {
             },
         spouses : [
             {
-         name : 'Towner Miller Menefee',
                 recordID : 'gen4rec4',            
             },
             {
@@ -266,35 +241,35 @@ gen4rec12 : {
         ],
         children : [
             {
-                name : 'Sally Menefee',
+//                 name : 'Sally Menefee',
                 recordID : 'gen5rec7'
             },
             {
-                name : 'Cornelia Menefee',
+//                 name : 'Cornelia Menefee',
                 recordID : 'gen5rec8'
             },
             {
-                name : 'Caroline Menefee',
+//                 name : 'Caroline Menefee',
                 recordID : 'gen5rec9'
             },
             {
-                name : 'Betsy Menefee',
+//                 name : 'Betsy Menefee',
                 recordID : 'gen5rec10'
             },
             {
-                name : 'John Menefee',
+//                 name : 'John Menefee',
                 recordID : 'gen5rec11'
             },
             {
-                name : 'John Brian Menefee (died at two months)',
+//                 name : 'John Brian Menefee (died at two months)',
                 recordID : 'gen5rec12'
             },
             {
-                name : 'Christine Menefee',
+//                 name : 'Christine Menefee',
                 recordID : 'gen5rec13'
             },
             {
-                name : 'Peter Menefee',
+//                 name : 'Peter Menefee',
                 recordID : 'gen5rec14'
             },
         ],
@@ -336,7 +311,6 @@ gen4rec13 : {
             },
         spouses : [
             {
-         name : 'Towner Miller Menefee',
                 recordID : 'gen4rec4',            
             },
             {
@@ -365,21 +339,17 @@ gen4rec3 : {
         },
     spouses : [
         {
-            name : 'Phyllis',
             recordID : 'gen4rec19'
         },
     ],
     children : [
         {
-            name : 'Wendy Menefee',
             recordID : 'gen5rec15'
         },
         {
-            name : 'Jennifer Menefee',
             recordID : 'gen5rec16'
         },
         {
-            name : ' Christopher Menefee',
             recordID : 'gen5rec17'
                 },
     ],
@@ -399,20 +369,16 @@ gen4rec19 : {
         about : ''
     },
     spouses : [ {
-        name : 'Lee Bruce Menefee',
         recordID : 'gen4rec3'
     },
     ],
         children : [ {
-            name : 'Wendy Menefee',
             recordID : 'gen5rec15'
         },
         {
-            name : 'Jennifer Menefee',
             recordID : 'gen5rec16'
         },
         {
-            name : ' Christopher Menefee',
             recordID : 'gen5rec17'
         },
     ],
@@ -434,7 +400,6 @@ gen1rec1 : {
         spouses:[{},],
         children : [
             {
-                name : 'Edward Adams',
                 recordID : 'gen2rec1'
             },
         ],
@@ -455,17 +420,14 @@ gen2rec4 : {
             },
         spouses : [
             {
-                name : 'Mary Whitelaw',
                 recordID : 'gen2rec7'
             },
         ],
         children : [
             {
-                name : 'Francis Galaher',
                 recordID : 'gen3rec7'
             },
             {
-                name : 'Robert Galaher',
                 recordID : 'gen0rec0'
             },
         ],
@@ -485,17 +447,14 @@ gen2rec7 : {
             },
         spouses : [
             {
-                name : 'Charles Galaher',
                 recordID : 'gen2rec4'
             },
         ],
         children : [
             {
-                name : 'Francis Galaher',
                 recordID : 'gen3rec7'
             },
             {
-                name : 'Robert Galaher',
                 recordID : 'gen0rec0'
             },
         ],
@@ -572,17 +531,14 @@ gen1rec2 : {
             },
         spouses : [
             {
-                name : 'Anna Bennett',
                 recordID : 'gen1rec16',
             }
         ],
         children : [
             {
-                name : 'James W. Cook',
                 recordID : 'gen2rec3'
             },
             {
-                name : 'Vincent Cook',
                 recordID : 'gen2rec12'
             },
         ],
@@ -602,16 +558,13 @@ gen1rec16 : {
         about : ''
     },
     spouses : [ {
-        name : 'Horatio Cooke',
         recordID : 'gen1rec2'
     },
     ],
         children : [ {
-            name : 'James W. Cook',
             recordID : 'gen2rec3'
         },
         {
-            name : 'Vincent Cook',
             recordID : 'gen2rec12'
         },
     ],
@@ -656,13 +609,11 @@ gen1rec5 : {
             },
         spouses : [
             {
-                name : 'Brisbane',
                 recordID : 'gen1rec9'
             }
         ],
         children : [
             {
-                name : 'Charles Galaher',
                 recordID : 'gen2rec4'
             },
             {
@@ -694,13 +645,11 @@ gen1rec5 : {
             },
         spouses : [
             {
-                name : 'Francis Galaher',
                 recordID : 'gen1rec5'
             }
         ],
         children : [
             {
-                name : 'Charles Galaher',
                 recordID : 'gen2rec4'
             },
             {
@@ -744,7 +693,6 @@ gen1rec4 : {
         ],
         children : [
             {
-                name : 'Iantha (Cully) Miller',
                 recordID : 'gen2rec3'
             },
         ],
@@ -776,7 +724,6 @@ gen1rec8 : {
         ],
         children : [
             {
-                name : 'Lee Bruce Menefee',
                 recordID : 'gen2rec5'
             },
         ],
@@ -807,7 +754,6 @@ gen1rec3 : {
         ],
         children : [
             {
-                name : 'Edgar Dean Crumpacker',
                 recordID : 'gen2rec6'
             },
         ],
@@ -827,19 +773,10 @@ gen1rec11 : {
         },
     spouses : [
             {
-                name : '',     
-                born_date : '',
-                born_location : '',
-                married_date : '',
-                married_location : '',
-                died_date : '',
-                died_location : '',
-                about : ''
             },
         ],
         children : [
             {
-                name : 'Mary Whitelaw',
                 recordID : 'gen2rec4'
             },
         ],
@@ -859,21 +796,17 @@ gen2rec3 : {
         },
     spouses : [
             {
-                name : 'Iantha (Cully) Miller',
                 recordID : 'gen2rec13'
             },
         ],
         children : [
             {
-                name : 'Cornelia Cooke',
                 recordID : 'gen3rec10'
             },
             {
-                name : 'Cully Anna Cooke',
                 recordID : 'gen3rec13'
             },
             {
-                name : 'Dorothy Cooke (Died at birth)',
                 recordID : 'gen3rec14'
             },
         ],
@@ -915,21 +848,17 @@ gen2rec13 : {
                 about : ''
     },
     spouses : [ {
-        name : 'James W. Cook',
         recordID : 'gen2rec3'
     },
     ],
         children : [ 
                     {
-                name : 'Cornelia Cooke',
                 recordID : 'gen3rec10'
             },
             {
-                name : 'Cully Anna Cooke',
                 recordID : 'gen3rec13'
             },
             {
-                name : 'Dorothy Cooke (Died at birth)',
                 recordID : 'gen3rec14'
             },
     ],
@@ -952,7 +881,6 @@ gen2rec5 : {
     spouses:[{},],
         children : [
             {
-                name : 'Percy Lee Menefee',
                 recordID : 'gen3rec4'
             },
             {
@@ -977,7 +905,6 @@ gen2rec6 : {
     spouses:[{},],
         children : [
             {
-                name : 'Maurice E. Crumpacker',
                 recordID : 'gen3rec6'
             },
         ],
@@ -998,11 +925,9 @@ gen2rec1 : {
     spouses:[{},],
         children : [
             {
-                name : 'Charlotte Stevens Adams',
                 recordID : 'gen3rec16'
             },
             {
-                name : 'George Adams',
                 recordID : 'gen3rec15'
             },
         ],
@@ -1045,29 +970,23 @@ gen3rec7 : {
         },
     spouses : [
             {
-                name : 'Charlotte Stevens Adams',
                 recordID : 'gen3rec16'
             },
         ],
         children : [
             {
-                name : 'Robert Brisbane Galaher',
                 recordID : 'gen4rec18'
             },
             {
-                name : 'Agnes Galaher(Stillborn)',
                 recordID : 'gen4rec20'
             },
             {
-                name : 'Abbott Galaher',
                 recordID : 'gen4rec2'
             },
             {
-                name : 'Edward Galaher',
                 recordID : 'gen4rec21'
             },
             {
-                name : 'Mary Galaher',
                 recordID : 'gen4rec22'
             },
         ],
@@ -1087,30 +1006,24 @@ gen3rec16 : {
         about : '',    
         },
     spouses : [ {
-        name : 'Francis Galaher',
         recordID : 'gen3rec7'
     },
     ],
         children : [ 
         
                     {
-                name : 'Robert Brisbane Galaher',
                 recordID : 'gen4rec18'
             },
             {
-                name : 'Agnes Galaher(Stillborn)',
                 recordID : 'gen4rec20'
             },
             {
-                name : 'Abbott Galaher',
                 recordID : 'gen4rec2'
             },
             {
-                name : 'Edward Galaher',
                 recordID : 'gen4rec21'
             },
             {
-                name : 'Mary Galaher',
                 recordID : 'gen4rec22'
             },
 
@@ -1197,21 +1110,17 @@ gen3rec6 : {
         },
     spouses : [
             {
-                name : 'Cully Anna Cooke',
                 recordID : 'gen3rec13'
             },
         ],
         children : [
             {
-                name : 'Peter Crumpacker',
                 recordID : 'gen4rec14'
             },
             {
-                name : 'Edgar Dean Crumpacker',
                 recordID : 'gen4rec7'
             },
             {
-                name : 'James Cooke Crumpacker',
                 recordID : 'gen4rec15'
             },
         ],
@@ -1231,7 +1140,6 @@ gen3rec13 : {
         },
     spouses : [
             {
-       name : 'Maurice E. Crumpacker',
                 recordID : 'gen3rec6'
             },
             {
@@ -1241,15 +1149,12 @@ gen3rec13 : {
         ],
         children : [
             {
-                name : 'Peter Crumpacker',
                 recordID : 'gen4rec14'
             },
             {
-                name : 'Edgar Dean Crumpacker',
                 recordID : 'gen4rec7'
             },
             {
-                name : 'James Cooke Crumpacker',
                 recordID : 'gen4rec15'
             },
         ],
@@ -1274,13 +1179,6 @@ gen3rec8 : {
             },
             {
                 name : 'Mr. Foy',
-                born_date : '',
-                born_location : '',
-                married_date : '',
-                married_location : '',
-                died_date : '',        
-                died_location : '',
-                about : ''
             },
         ],
         children : [
@@ -1289,7 +1187,6 @@ gen3rec8 : {
                 recordID : 'gen0rec0'
             },
             {
-                name : 'Bob Foy',
                 recordID : 'gen4rec16'
             },
         ],
@@ -1309,21 +1206,17 @@ gen3rec9 : {
         },
     spouses : [
             {
-                name : 'Janet Neikirk',
                 recordID : 'gen3rec17'
             },
         ],
         children : [
             {
-                name : 'Sally Neikirk',
                 recordID : 'gen4rec9'
             },
             {
-                name : 'Julie Neikirk',
                 recordID : 'gen4rec10'
             },
             {
-                name : 'Bill Neikirk',
                 recordID : 'gen4rec11'
             },
         ],
@@ -1344,21 +1237,17 @@ gen3rec17 : {
         },
     spouses : [
             {
-                name : 'Thom Neikirk',
                 recordID : 'gen3rec9'
             },
         ],
         children : [
             {
-                name : 'Sally Neikirk',
                 recordID : 'gen4rec9'
             },
             {
-                name : 'Julie Neikirk',
                 recordID : 'gen4rec10'
             },
             {
-                name : 'Bill Neikirk',
                 recordID : 'gen4rec11'
             },
         ],
@@ -1380,15 +1269,12 @@ gen1rec15 : {
     spouses:[{},],
         children : [
             {
-                name : 'Libby Cronnin',
                 recordID : 'gen4rec12'
             },
             {
-                name : 'Dorothy (Dotti) Cronnin',
                 recordID : 'gen6rec'
             },
             {
-                name : 'Sally Cronnin',
                 recordID : 'gen6rec'
             },
         ],
@@ -1408,41 +1294,32 @@ gen4rec1 : {
         },
     spouses : [
             {
-                name : 'Robert Brisebane Galaher',
                 recordID : 'gen4rec18'
             },
                         {
-                name : 'Thomas T. Taylor',
                 recordID : 'gen4rec23'
             },
                         {
-                name : 'Edgar Dean Crumpacker',
                 recordID : 'gen4rec7'
             },
         ],
         children : [
             {
-                name : 'Abbott Stevens Galaher',
                 recordID : 'gen5rec1'
             },
             {
-                name : 'Towner Whitelaw Galaher',
                 recordID : 'gen5rec2'
             },
             {
-                name : 'Nathaniel Galaher(Died at birth)',
                 recordID : 'gen5rec34'
             },
             {
-                name : 'Ursula Galaher',
                 recordID : 'gen5rec3'
             },
             {
-                name : 'Matthew Adams Galaher',
                 recordID : 'gen5rec4'
             },
             {
-                name : 'Eliza Cooke Galaher',
                 recordID : 'gen5rec5'
             },
         ],
@@ -1471,26 +1348,21 @@ gen4rec23 : {
                 recordID : 'gen0rec0',
             },
             {
-                name : 'Cornelia Miller Menefee',
                 recordID : 'gen4rec1',
             },
         ],
         children : [
             {
-                name : 'Tommy Taylor',
                 recordID : 'gen5rec46',
             },
             {
-                name : 'Marga Taylor',
                 recordID : 'gen5rec47',
             },
 
             {
-                name : 'China Taylor',
                 recordID : 'gen5rec48',
             },
             {
-                name : 'Stewart Taylor',
                 recordID : 'gen5rec49',
             },
         ],
@@ -1512,33 +1384,26 @@ gen4rec18 : {
         },
     spouses : [
             {
-                name : 'Cornelia Menefee',
                 recordID : 'gen4rec1'
             },
         ],
         children : [
             {
-                name : 'Abbott Stevens Galaher',
                 recordID : 'gen5rec1'
             },
             {
-                name : 'Towner Whitelaw Galaher',
                 recordID : 'gen5rec2'
             },
             {
-                name : 'Nathaniel Galaher(Died at birth)',
                 recordID : 'gen5rec34'
             },
             {
-                name : 'Ursula Galaher',
                 recordID : 'gen5rec3'
             },
             {
-                name : 'Matthew Adams Galaher',
                 recordID : 'gen5rec4'
             },
             {
-                name : 'Eliza Cooke Galaher',
                 recordID : 'gen5rec5'
             },
         ],
@@ -1571,7 +1436,6 @@ gen4rec2 : {
         ],
         children : [
             {
-                name : 'Charles E Galaher',
                 recordID : 'gen5rec6'
             },
         ],
@@ -1591,41 +1455,32 @@ gen4rec7 : {
         },
     spouses : [
             {
-                name : 'Flo Erle Russell',
                 recordID : 'gen4rec27'
             },
             {
-                name : 'Jeanne Fuller',
                 recordID : 'gen4rec28'
             },
             {
-                name : 'Un Named',
                 recordID : 'gen4rec29'
             },
             {
-                name : 'Dorothy',
                 recordID : 'gen4rec30'
             },
             {
-                name : 'Cornelia Menefee',
                 recordID : 'gen4rec1',
             },
         ],
         children : [
             {
-                name : 'CiCi',
                 recordID : 'gen5rec50'
             },
             {
-                name : 'Paula Helen Crumpacker',
                 recordID : 'gen5rec52'
             },
             {
-                name : 'Eve Alani Crumpacker',
                 recordID : 'gen5rec32'
             },
             {
-                name : 'Pender (Penny?) Lee Crumpacker',
                 recordID : 'gen5rec51'
             },
         ],
@@ -1645,25 +1500,20 @@ gen4rec5 : {
         },
     spouses : [
             {
-                name : 'Peter Crumpacker',
                 recordID : 'gen4rec14'
             },
         ],
         children : [
             {
-                name : 'Abby Crumpacker',
                 recordID : 'gen5rec18'
             },
             {
-                name : 'Emily Crumpacker',
                 recordID : 'gen5rec19'
             },
             {
-                name : 'Dean Crumpacker',
                 recordID : 'gen5rec20'
             },
             {
-                name : 'Blair Crumpacker',
                 recordID : 'gen5rec21'
                     },
         ],
@@ -1683,25 +1533,20 @@ gen4rec14 : {
         },
     spouses : [
             {
-                name : 'Ann ? Crumpacker',
                 recordID : 'gen4rec5'
             },
         ],
         children : [
             {
-                name : 'Abby Crumpacker',
                 recordID : 'gen5rec18'
             },
             {
-                name : 'Emily Crumpacker',
                 recordID : 'gen5rec19'
             },
             {
-                name : 'Dean Crumpacker',
                 recordID : 'gen5rec20'
             },
             {
-                name : 'Blair Crumpacker',
                 recordID : 'gen5rec21'
                     },
         ],
@@ -1722,22 +1567,18 @@ gen4rec8 : {
             },
     spouses : [
             {
-                name : 'James (Jimmy) Cook Crumpacker',
                 recordID : 'gen4rec15',
             },
         ],
                 
         children : [
             {
-                name : 'Cully Margaret Crumpacker (Olaf Holte)',
                 recordID : 'gen5rec43'
             },
             {
-                name : 'Victoria (Vicki) Crumpacker',
                 recordID : 'gen5rec44'
             },
             {
-                name : 'James Feir Crumpacker (Anne Finkbeiner)',
                 recordID : 'gen5rec45'
             },        
                     
@@ -1760,21 +1601,17 @@ gen4rec15 : {
             },
     spouses : [
             {
-       name : 'Margaret (Peggy) Feir Crumpacker',
                 recordID : 'gen4rec8'
             },
         ],
         children : [
             {
-                name : 'Cully Margaret Crumpacker (Olaf Holte)',
                 recordID : 'gen5rec43'
             },
             {
-                name : 'Victoria (Vicki) Crumpacker',
                 recordID : 'gen5rec44'
             },
             {
-                name : 'James Feir Crumpacker (Anne Finkbeiner)',
                 recordID : 'gen5rec45'
             },
         ],
@@ -1802,12 +1639,10 @@ gen4rec27 : {
         about : ''
     },
     spouses : [ {
-        name : 'Edgar Dean Crumpacker',
         recordID : 'gen4rec7'
     },
     ],
         children : [ {
-            name : 'CiCi',
             recordID : 'gen5rec50'
         },
     ],
@@ -1827,16 +1662,13 @@ gen4rec28 : {
         about : ''
     },
     spouses : [ {
-        name : 'Edgar Dean Crumpacker',
         recordID : 'gen4rec7'
     },
     ],
         children : [ {
-            name : 'Eve Alani Crumpacker',
             recordID : 'gen5rec32'
         },
         {
-            name : 'Pender (Penny?) Lee Crumpacker',
             recordID : 'gen5rec51'
         },
     ],
@@ -1861,7 +1693,6 @@ gen4rec29 : {
         recordID : 'gen0rec0'
     },
     {
-        name : 'Edgar Dean Crumpacker',
         recordID : 'gen4rec7'
     },
     ],
@@ -1891,7 +1722,6 @@ gen4rec30 : {
         recordID : 'gen0rec0'
     },
     {
-        name : 'Edgar Dean Crumpacker',
         recordID : 'gen4rec7'
     },
     ],
@@ -1953,7 +1783,6 @@ gen4rec6 : {
         ],
         children : [
             {
-                name : 'John Skov',
                 recordID : 'gen5rec22'
                     },
         ],
@@ -1973,25 +1802,20 @@ gen4rec9 : {
         },
     spouses : [
             {
-                name : 'Bob Foy',
                 recordID : 'gen4rec16'
             },
             {
-                name : 'Tony Torrance',
                 about : 'gen4rec24'
             },
         ],
         children : [
             {
-                name : 'Stephanie',
                 recordID : 'gen5rec31'
             },
             {
-                name : 'Megan McKenna',
                 recordID : 'gen5rec33'
             },
             {
-                name : 'Alex Torrance',
                 recordID : 'gen5rec24'
             },
         ],
@@ -2011,7 +1835,6 @@ gen4rec16 : {
         },
     spouses : [
             {
-                name : 'Sally Neikirk',
                 recordID : 'gen4rec9',    
             },
             {
@@ -2021,11 +1844,9 @@ gen4rec16 : {
         ],
         children : [
             {
-                name : 'Stephanie',
                 recordID : 'gen5rec31'
             },
             {
-                name : 'Megan McKenna',
                 recordID : 'gen5rec33'
             },
             {
@@ -2050,7 +1871,6 @@ gen4rec24 : {
     },
     spouses : [ 
     {
-        name : 'Sally Neikirk',
         recordID : 'gen4rec9'
     },
     {
@@ -2059,7 +1879,6 @@ gen4rec24 : {
     },
     ],
         children : [ {
-            name : 'Alex Torrance',
             recordID : 'gen5rec24'
         },
     ],
@@ -2080,21 +1899,17 @@ gen4rec10 : {
         },
     spouses : [
             {
-                name : 'Brad Shiley',
                 recordID : 'gen4rec25'
             },
             {
-                name : 'Bill Headly',
                 recordID : 'gen4rec26'
             },
         ],
         children : [
             {
-                name : 'Sam Shiley',
                 recordID : 'gen5rec40'
             },
             {
-                name : 'Cynthia Shiley',
                 recordID : 'gen5rec41'
             },
         ],
@@ -2115,7 +1930,6 @@ gen4rec25 : {
         },
     spouses : [
             {
-                name : 'Julie Neikirk',
                 recordID : 'gen4rec10'
             },
             {
@@ -2125,11 +1939,9 @@ gen4rec25 : {
         ],
         children : [
             {
-                name : 'Sam Shiley',
                 recordID : 'gen5rec40'
             },
             {
-                name : 'Cynthia Shiley',
                 recordID : 'gen5rec41'
             },
         ],
@@ -2150,7 +1962,6 @@ gen5rec40 : {
         },
     spouses : [
             {
-                name : 'Jenny McQuire',
                 recordID : 'gen0rec0'
             },
         ],
@@ -2212,7 +2023,6 @@ gen4rec26 : {
         },
     spouses : [
             {
-                name : 'Julie Neikirk',
                 recordID : 'gen4rec10'
             },
         ],
@@ -2235,17 +2045,15 @@ gen4rec11 : {
         },
     spouses : [
             {
-                name : 'Teresa Neikirk',
                 recordID : 'gen4rec17'
             },
         ],
         children : [
             {
-                name : 'Alex Neikirk',
                 recordID : 'gen6rec19'
             },
             {
-                name : '...',
+                name : '...baby',
                 recordID : 'gen0rec0'
             },
         ],
@@ -2265,17 +2073,15 @@ gen4rec17 : {
         },
     spouses : [
             {
-       name : 'Bill Neikirk',
                 recordID : 'gen4rec11'
             },
         ],
         children : [
             {
-                name : 'Alex',
                 recordID : 'gen6rec19'
             },
             {
-                name : '...',
+                name : '...baby',
                 recordID : 'gen0rec0'
             },
         ],
@@ -2295,13 +2101,11 @@ gen5rec7 : {
         },
     spouses : [
             {
-                name : 'Michael Moore',
                 recordID : 'gen5rec26'
             },
         ],
         children : [
             {
-                name : 'Sarah Moore',
                 recordID : 'gen6rec5'
                     },
         ],
@@ -2321,13 +2125,11 @@ gen5rec26 : {
         },
     spouses : [
             {
-                name : 'Sally Menefee',
                 recordID : 'gen5rec7'
             },
         ],
         children : [
             {
-                name : 'Sarah Moore',
                 recordID : 'gen6rec5'
                     },
         ],
@@ -2347,17 +2149,14 @@ gen5rec9 : {
         },
     spouses : [
             {
-                name : 'Jim Sheahan',
                 recordID : 'gen5rec27'
             },
         ],
         children : [
             {
-                name : 'Max Sheahan',
                 recordID : 'gen6rec8'
             },
             {
-                name : 'Maggie Sheahan',
                 recordID : 'gen6rec9'
                     },
         ],
@@ -2377,17 +2176,14 @@ gen5rec27 : {
         },
     spouses : [
             {
-                name : 'Caroline Menefee',
                 recordID : 'gen5rec9'         
             },
         ],
         children : [
             {
-                name : 'Max Sheahan',
                 recordID : 'gen6rec8'
             },
             {
-                name : 'Maggie Sheahan',
                 recordID : 'gen6rec9'
                     },
         ],
@@ -2604,9 +2400,8 @@ gen6rec8 : {
                 married_location : '',
                 died_date : '',
                 died_location : '',
-                mother : 'gen0rec0',
-                father : 'gen0rec0',
-                parents : 'gen5rec27',
+                mother : 'gen5rec9',
+                father : 'gen5rec27',
                 about : ''
         },
     spouses : [
@@ -2631,8 +2426,8 @@ gen6rec9 : {
                 married_location : '',
                 died_date : '',
                 died_location : '',
-                mother : 'gen0rec0',
-                father : 'gen0rec0',
+                mother : 'gen5rec9',
+                father : 'gen5rec27',
                 parents : 'gen5rec27',
                 about : ''
         },
@@ -2654,17 +2449,14 @@ gen5rec8 : {
         },
     spouses : [
             {
-                name : 'Michael Laugherty',
                 recordID : 'gen5rec28'
             },
         ],
         children : [
             {
-                name : 'Isabell Laugherty',
                 recordID : 'gen6rec6'
             },
             {
-                name : 'Caroline Laugherty',
                 recordID : 'gen6rec7'
                     },
         ],
@@ -2684,17 +2476,14 @@ gen5rec28 : {
         },
     spouses : [
             {
-                name : 'Cornelia Menefee',
                 recordID : 'gen5rec8'
             },
         ],
         children : [
             {
-                name : 'Isabell Laugherty',
                 recordID : 'gen6rec6'
             },
             {
-                name : 'Caroline Laugherty',
                 recordID : 'gen6rec7'
                     },
         ],
@@ -2747,21 +2536,17 @@ gen5rec10 : {
         },
     spouses : [
             {
-                name : 'Arnoud Menesson',
                 recordID : 'gen5rec35'
             },
             {
-                name : 'Norm Rickles',
                 recordID : 'gen5rec36'
             },
         ],
         children : [
             {
-                name : 'Margaux Menesson',
                 recordID : 'gen6rec10'
             },
             {
-                name : 'William Menesson',
                 recordID : 'gen6rec11'
             },
         ],
@@ -2771,7 +2556,7 @@ gen5rec35 : {
     person : {
         name : 'Arnoud Menesson',
         born_date : '19--',
-        born_location : '',
+        born_location : 'Morrocco',
         married_date : '',
         married_location : '',
         died_date : '20--',
@@ -2781,17 +2566,14 @@ gen5rec35 : {
         about : ''
     },
     spouses : [ {
-        name : 'Betsy Menefee Rickels',
         recordID : 'gen5rec10'
     },
     ],
         children : [
             {
-                name : 'Margaux Menesson',
                 recordID : 'gen6rec10'
             },
             {
-                name : 'William Menesson',
                 recordID : 'gen6rec11'
             },
         ],
@@ -2811,7 +2593,6 @@ gen5rec36 : {
         about : ''
     },
     spouses : [ {
-        name : 'Betsy Menefee Rickels',
         recordID : 'gen5rec10'
     },
     ],
@@ -2840,7 +2621,6 @@ gen6rec10 : {
         ],
         children : [
             {
-                name : 'Sage Christopher Ryan',
                 recordID : 'gen7rec2'            
             },
             {
@@ -2856,8 +2636,8 @@ gen6rec11 : {
                 married_location : '',
                 died_date : '',
                 died_location : '',
-                mother : 'gen0rec0',
-                father : 'gen0rec0',
+                mother : 'gen5rec10',
+                father : 'gen5rec35',
                 parents : 'gen5rec10',
                 about : ''
         },
@@ -2899,29 +2679,23 @@ gen5rec11 : {
                 recordID : 'gen0rec0'
             },
             {
-                name : 'Jane (Jani) K. Tormey Menefee',
                 recordID : 'gen5rec42',
             },
         ],
         children : [
             {
-                name : 'Ellie Menefee',
                 recordID : 'gen6rec12'
             },
             {
-                name : 'Mati Menefee',
                 recordID : 'gen6rec13'
             },
             {
-                name : 'Towner Menefee',
                 recordID : 'gen6rec14'
             },
             {
-                name : 'John Brian Menefee',
                 recordID : 'gen6rec15'
             },
             {
-                name : 'Michael Menefee',
                 recordID : 'gen6rec16'
                     },
         ],
@@ -2941,29 +2715,23 @@ gen5rec42 : {
         about : ''
     },
     spouses : [ {
-        name : 'John Menefee',
         recordID : 'gen5rec11'
     },
     ],
         children : [  
             {
-                name : 'Ellie Menefee',
                 recordID : 'gen6rec12'
             },
             {
-                name : 'Mati Menefee',
                 recordID : 'gen6rec13'
             },
             {
-                name : 'Towner Menefee',
                 recordID : 'gen6rec14'
             },
             {
-                name : 'John Brian Menefee',
                 recordID : 'gen6rec15'
             },
             {
-                name : 'Michael Menefee',
                 recordID : 'gen6rec16'
             },
     ],
@@ -2984,7 +2752,6 @@ gen5rec13 : {
         },
     spouses : [
             {
-                name : 'Wes McNeil',
                 recordID : 'gen5rec37'
             },
         ],
@@ -3008,7 +2775,6 @@ gen5rec37 : {
         about : ''
     },
     spouses : [ {
-        name : 'Christine Menefee',
         recordID : 'gen5rec13'
     },
     ],
@@ -3035,25 +2801,20 @@ gen5rec14 : {
     spouses : [
 
             {
-                name : 'Courtney Prendergast',
                 recordID : 'gen5rec39'
             },
             {
-                name : 'Guiness',
                 recordID : 'gen5rec38'
             },
         ],
         children : [
             {
-                name : 'Whitney Menefee',
                 recordID : 'gen6rec20'
             },
             {
-                name : 'Jack Menefee',
                 recordID : 'gen6rec21'
             },
             {
-                name : 'Lucy Menefee',
                 recordID : 'gen6rec22'
                     },
         ],
@@ -3073,7 +2834,6 @@ gen5rec38 : {
         about : ''
     },
     spouses:[{
-        name : 'Peter Menefee',
         recordID : 'gen5rec14'
     
     },],
@@ -3094,21 +2854,17 @@ gen5rec39 : {
         about : ''
     },
     spouses:[{
-            name : 'Peter Menefee',
         recordID : 'gen5rec14'
     
     },],
     children:[
                 {
-                name : 'Whitney Menefee',
                 recordID : 'gen6rec20'
             },
             {
-                name : 'Jack Menefee',
                 recordID : 'gen6rec21'
             },
             {
-                name : 'Lucy Menefee',
                 recordID : 'gen6rec22'
             },
     ],
@@ -3339,13 +3095,11 @@ gen5rec1 : {
         },
     spouses : [
             {
-                name : 'Eve Alani Crumpacker',
                 recordID : 'gen5rec32'
             },
         ],
         children : [
             {
-                name : 'Emily Anne Galaher',
                 recordID : 'gen6rec1'
                     },
         ],
@@ -3366,13 +3120,11 @@ gen5rec32 : {
         },
     spouses : [
             {
-            name : 'Abbott Stevens Galaher',
             recordID : 'gen5rec1'
             },
         ],
         children : [
             {
-                name : 'Emily Anne Galaher',
                 recordID : 'gen6rec1'
                     },
         ],
@@ -3512,17 +3264,14 @@ gen5rec2 : {
         },
     spouses : [
             {
-                name : 'Lilia Gamarra',
                 recordID : 'gen5rec29'
             },
         ],
         children : [
             {
-                name : 'Whitney Victoria Galaher',
                 recordID : 'gen6rec2'
             },
             {
-                name : 'Heather Galaher',
                 recordID : 'gen6rec3'
                     },
         ],
@@ -3535,17 +3284,14 @@ gen5rec29 : {
         },
     spouses : [
             {
-                name : 'Towner Whitelaw Galaher',
                 recordID : 'gen5rec2'
             },
         ],
         children : [
             {
-                name : 'Whitney Victoria Galaher',
                 recordID : 'gen6rec2'
             },
             {
-                name : 'Heather Galaher',
                 recordID : 'gen6rec3'
                     },
         ],
@@ -3599,13 +3345,11 @@ gen5rec4 : {
         },
     spouses : [
             {
-                name : 'Megan McKenna Torrance',
                 recordID : 'gen5rec33'
             },
         ],
         children : [
             {
-                name : 'McKenna Culla (Cully) Galaher',
                 recordID : 'gen6rec4'
                     },
         ],
@@ -3625,13 +3369,11 @@ gen5rec33 : {
         },
     spouses : [
             {
-                name : 'Matthew Adams Galaher',
                 recordID : 'gen5rec4'
             },
         ],
         children : [
             {
-                name : 'McKenna Culla (Cully) Galaher',
                 recordID : 'gen6rec4'
                     },
         ],
@@ -3668,7 +3410,6 @@ gen5rec6 : {
         },
     spouses : [
             {
-                name : 'Susan',
                 recordID : 'gen5rec30',
             },
         ],
@@ -3689,7 +3430,6 @@ gen5rec30 : {
         },
     spouses : [
             {
-                name : 'Charles Galaher',
                 recordID : 'gen5rec6'
             },
         ],
@@ -3761,17 +3501,14 @@ gen5rec23 : {
         },
     spouses : [
             {
-                name : 'Stephanie Torrance',
                 recordID : 'gen5rec31'
             },
         ],
         children : [
             {
-                name : 'Anthony Schurz',
                 recordID : 'gen6rec17'
             },
             {
-                name : 'Caroline Schurz',
                 recordID : 'gen6rec18'
             },
         ],
@@ -3791,17 +3528,14 @@ gen5rec31 : {
         },
     spouses : [
             {
-                name : 'Todd Schurz',
                 recordID : 'gen5rec23'
             },
         ],
         children : [
             {
-                name : 'Anthony Schurz',
                 recordID : 'gen6rec17'
             },
             {
-                name : 'Caroline Schurz',
                 recordID : 'gen6rec18'
             },
         ],
@@ -3822,21 +3556,21 @@ gen5rec24 : {
     spouses:[{},],
         children : [
             {
-                name : ''
+
                     },
         ],
     },
 gen6rec5 : {
         person : {
-                name : 'Sarah Moore (Add two children)',
+                name : 'Sarah Moore',
                 born_date : 'Feb 28, 19??',
                 born_location : '',
                 married_date : '2005',
                 married_location : '',
                 died_date : '',
                 died_location : '',
-                mother : 'gen0rec0',
-                father : 'gen0rec0',
+                mother : 'gen5rec7',
+                father : 'gen5rec26',
                 about : ''
         },
     spouses : [
@@ -3853,11 +3587,15 @@ gen6rec5 : {
         ],
         children : [
             {
-                name : '',
-                recordID : 'gen0rec0'
+                recordID : 'gen7rec3'
                     },
+                    
+           {
+                recordID : 'gen7rec4'
+           },         
         ],
     },
+
 gen6rec1 : {
         person : {
                 name : 'Emily Anne Galaher',
@@ -3985,13 +3723,10 @@ gen6rec12 : {
         about : ''
     },
     spouses : [ {
-        name : 'Jeff Millan',
         recordID : 'gen6rec23'
     },
     ],
         children : [ {
-
-                name : 'Bowen Jane Millan',
                 recordID : 'gen7rec1'
 
 
@@ -4116,14 +3851,11 @@ gen6rec23 : {
         about : ''
     },
     spouses : [ {
-        name : 'Ellie Menefee',
         recordID : 'gen6rec12'
 
     },
     ],
         children : [ {
-
-        name : 'Millan',
         recordID : 'gen7rec1'
 
         },
@@ -4168,6 +3900,58 @@ gen7rec2 : {
         died_date : '',
         died_location : '',
         mother : 'gen6rec10',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ {
+
+
+    },
+    ],
+        children : [ {
+
+        },
+        {
+        },
+    ],
+},
+
+gen7rec3 : {
+    person : {
+        name : 'Spencer',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen6rec5',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ {
+
+
+    },
+    ],
+        children : [ {
+
+        },
+        {
+        },
+    ],
+},
+
+gen7rec4 : {
+    person : {
+        name : 'Cooper',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen6rec5',
         father : 'gen0rec0',
         about : ''
     },
