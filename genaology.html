@@ -411,12 +411,12 @@ function assembColumn(primKey,relation,callingRecID){
     }
     else if((articleElementExists)&&(relation === 'parent')){
 //             $('#' + callingRecID).before(innerH).prev().css('background-color', '#00FFFF').fadeIn();
-            $('#' + callingRecID).before(innerH).prev().css('background-color', '#00FFFF').effect('shake', {times: 3, direction: 'left', distance: 3}, 1300);
+            $('#' + callingRecID).before(innerH).prev().css('background-color', '#fff').effect('shake', {times: 3, direction: 'left', distance: 3}, 1300); // #00FFFF
     }
     else if((articleElementExists)&&(relation === 'spouse')){
 
 //         $('#srch').after(innerH).fadeIn();
-        $('#srch').after(innerH).siblings(":last").css('background-color', '#FF00FF').fadeIn();// pink
+        $('#srch').after(innerH).siblings(":last").css('background-color', '#fff').fadeIn();// pink // #FF00FF
       
 //        var articleElement = $('#' + primKey).closest('article');
 //        $(articleElement).after(innerH).fadeIn(slow);
@@ -425,7 +425,7 @@ function assembColumn(primKey,relation,callingRecID){
     }
     else{
 //         $('#srch').after(innerH).fadeIn();
-        $('#srch').after(innerH).siblings(":last").fadeIn().css('background-color', '#FFFF00');
+        $('#srch').after(innerH).siblings(":last").fadeIn().css('background-color', '#fff'); //FFFF00
         
     }
 
@@ -463,7 +463,7 @@ function resetTree(primKey,relation,callingRecID){
     case "parent":        
         $('#' + callingRecID).prevAll('article').remove();
         // alert('should be gen5rec4: ' + callingRecID);
-        // $('#' + callingRecID).closest('article').css("background-color", "red");
+        // $('#' + callingRecID).closest('article').css("background-color", "white"); // red
 //         return false;
       // alert('this is a parent link');
       break;  
