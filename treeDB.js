@@ -9,7 +9,7 @@ var treeDB = {
 /*
 template:
 
-genxrecx : {
+gen0rec0 : {
     person : {
         name : 'xxx',
         born_date : '',
@@ -23,14 +23,14 @@ genxrecx : {
         about : ''
     },
     spouses : [ {
-        recordID : 'genxrecx'
+        recordID : 'gen0rec0'
     },
     ],
         children : [ {
-            recordID : 'genxrecx'
+            recordID : 'gen0rec0'
         },
         {
-            recordID : 'genxrecx'
+            recordID : 'gen0rec0'
         },
     ],
 },
@@ -68,6 +68,7 @@ gen3rec4 : {
                 mother : 'gen0rec0',
                 father : 'gen2rec5',
                 about : ''
+
             },
         spouses : [
             {
@@ -145,16 +146,8 @@ gen3rec11 : {
             },
         spouses : [
             {
-                name : 'Percy Lee Menefee',
-                born_date : 'Dec 29, 1897',
-                born_location : 'Houston Texas',
-                married_date : '',
-                married_location : '',
-                died_date : 'July 4,1955',
-                died_location : 'McMinnville, OR',
-                parents : 'gen2rec5',
                 recordID : 'gen3rec4',
-                about : ''
+
             },
             {
             },
@@ -231,49 +224,97 @@ gen4rec12 : {
                 recordID : 'gen4rec4',            
             },
             {
-                name : 'Thomas B. Malarkey Jr.(?)',
-                recordID : 'gen0rec0',
+                recordID : 'gen4rec31',
             },
             {
-                name : 'Bob Noyes',     
-                recordID : 'gen0rec0',
+                recordID : 'gen4rec32',
             },
         ],
         children : [
             {
-//                 name : 'Sally Menefee',
                 recordID : 'gen5rec7'
             },
             {
-//                 name : 'Cornelia Menefee',
                 recordID : 'gen5rec8'
             },
             {
-//                 name : 'Caroline Menefee',
                 recordID : 'gen5rec9'
             },
             {
-//                 name : 'Betsy Menefee',
                 recordID : 'gen5rec10'
             },
             {
-//                 name : 'John Menefee',
                 recordID : 'gen5rec11'
             },
             {
-//                 name : 'John Brian Menefee (died at two months)',
                 recordID : 'gen5rec12'
             },
             {
-//                 name : 'Christine Menefee',
                 recordID : 'gen5rec13'
             },
             {
-//                 name : 'Peter Menefee',
                 recordID : 'gen5rec14'
             },
         ],
     },
+
+
+gen4rec31 : {
+    person : {
+        name : 'Thomas B. Malarkey Jr.(?)',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen0rec0',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen4rec12',
+    },
+    ],
+        children : [ {
+            recordID : 'gen0rec0'
+        },
+        {
+            recordID : 'gen0rec0'
+        },
+    ],
+},
+
+
+gen4rec32 : {
+    person : {
+        name : 'Robert Hale Noyes Jr.',
+        born_date : 'May 7, 1916',
+        born_location : 'November 29, 2010',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen0rec0',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen4rec12',
+    },
+    ],
+        children : [ {
+            recordID : 'gen0rec0'
+        },
+        {
+            recordID : 'gen0rec0'
+        },
+    ],
+},
+
+
+
+
 
 gen5rec12 : {
     person : {
@@ -617,16 +658,13 @@ gen1rec5 : {
                 recordID : 'gen2rec4'
             },
             {
-                name : 'David Galaher',
-                recordID : 'gen0rec0'
+                recordID : 'gen2rec9'
             },
             {
-                name : 'Donald Galaher',
-                recordID : 'gen0rec0'
+                recordID : 'gen2rec10'
             },
             {
-                name : 'Alexander \'Sandy\' Galaher',
-                recordID : 'gen0rec0'
+                recordID : 'gen2rec11'
             }
         ],
     },
@@ -653,16 +691,13 @@ gen1rec5 : {
                 recordID : 'gen2rec4'
             },
             {
-                name : 'David Galaher',
-                recordID : 'gen0rec0'
+                recordID : 'gen2rec9'
             },
             {
-                name : 'Donald Galaher',
-                recordID : 'gen0rec0'
+                recordID : 'gen2rec10'
             },
             {
-                name : 'Alexander \'Sandy\' Galaher',
-                recordID : 'gen0rec0'
+                recordID : 'gen2rec11'
             }
         ],
     },
@@ -681,6 +716,19 @@ gen1rec4 : {
             },
         spouses : [
             {
+                recordID : 'gen1rec10'
+            },
+        ],
+        children : [
+            {
+                recordID : 'gen0rec0'
+            },
+        ],
+    },
+
+
+gen1rec10 : {
+    person : {
                 name : 'Zarilda Jackson',
                 born_date : 'Mar 8, 1828',
                 born_location : 'Randolph Co. Missouri',
@@ -688,15 +736,22 @@ gen1rec4 : {
                 married_location : 'Randolph Co. Missouri',
                 died_date : 'Oct. 23, 1913',
                 died_location : 'Salem OR.',
+                mother : 'gen0rec0',
+                father : 'gen0rec0',
                 about : 'http://homepage.mac.comh/galaher/heritage/etc.html'
-            },
-        ],
-        children : [
-            {
-                recordID : 'gen2rec3'
-            },
-        ],
     },
+    spouses : [ {
+        recordID : 'gen1rec4'
+    },
+    ],
+        children : [ {
+            recordID : 'gen0rec0'
+        },
+
+    ],
+},
+
+
 gen1rec8 : {
         person :             {
                 name : 'Hiram Menefee',
@@ -844,7 +899,6 @@ gen2rec13 : {
                 died_location : 'Portland OR',
                 mother : 'gen1rec16',
                 father : 'gen1rec2',
-                parents : 'gen1rec4',
                 about : ''
     },
     spouses : [ {
@@ -874,8 +928,7 @@ gen2rec5 : {
                 died_date : '',
                 died_location : '',
                 mother : 'gen0rec0',
-                father : 'gen0rec0',
-                parents : 'gen1rec8',
+                father : 'gen1rec8',
                 about : ''
         },
     spouses:[{},],
@@ -898,8 +951,7 @@ gen2rec6 : {
                 died_date : 'May 19, 1920',
                 died_location : 'Valparaiso, Porter County, Ind.',
                 mother : 'gen0rec0',
-                father : 'gen0rec0',
-                parents : 'gen1rec3',
+                father : 'gen1rec3',
                 about : 'http://homepage.mac.com/galaher/heritage/mcrumpacker_house.html#edgardean1851'
         },
     spouses:[{},],
@@ -1179,6 +1231,7 @@ gen3rec8 : {
             },
             {
                 name : 'Mr. Foy',
+                recordID : 'gen0rec0'
             },
         ],
         children : [
@@ -1286,7 +1339,7 @@ gen4rec1 : {
                 born_location : 'Portland OR',
                 married_date : 'Dec 29, 1951',
                 married_location : '',
-                died_date : '1994',
+                died_date : 'September 16, 1994',
                 died_location : 'Kailua HI.',
                 mother : 'gen3rec10',
                 father : 'gen3rec4',
@@ -1424,14 +1477,7 @@ gen4rec2 : {
         },
     spouses : [
             {
-                name : 'Charlotte Woodburn',
-                born_date : '1926',
-                born_location : 'Methuen, Massachusetts',
-                married_date : '1951',
-                married_location : '',
-                died_date : 'April 5, 1998',
-                died_location : 'North Andover, Massachusetts',
-                about : ''
+                recordID : 'gen4rec33',
             },
         ],
         children : [
@@ -1440,6 +1486,34 @@ gen4rec2 : {
             },
         ],
     },
+
+
+gen4rec33 : {
+    person : {
+        name : 'Charlotte Woodburn',
+        born_date : '1926',
+        born_location : 'Methuen, Massachusetts',
+        married_date : '1951',
+        married_location : '',
+        died_date : 'April 5, 1998',
+        died_location : 'North Andover, Massachusetts',
+        mother : 'gen0rec0',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ 
+        {
+        recordID : 'gen4rec2',
+    },
+    ],
+        children : [ {
+                recordID : 'gen5rec6'
+        },
+    ],
+},
+
+
+
 gen4rec7 : {
         person : {
                 name : 'Edgar Dean Crumpacker',
@@ -1756,29 +1830,14 @@ gen4rec6 : {
                 died_location : '',
                 mother : 'gen0rec0',
                 father : 'gen0rec0',
-                parents : 'gen3rec4',
                 about : ''
         },
     spouses : [
             {
-                name : '',
-                born_date : '19--',
-                born_location : '',
-                married_date : '',
-                married_location : '',
-                died_date : 'in WWII',
-                died_location : 'bombing mission',
-                about : ''
+                recordID : 'gen4rec34'
             },
             {
-                name : 'Mr. Skov',
-                born_date : '',
-                born_location : '',
-                married_date : '',
-                married_location : '',
-                died_date : '',
-                died_location : '',
-                about : ''
+                recordID : 'gen4rec35'
             },
         ],
         children : [
@@ -1787,6 +1846,62 @@ gen4rec6 : {
                     },
         ],
     },
+    
+    
+gen4rec34 : {
+    person : {
+        name : 'died in war',
+        born_date : '19--',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : 'in WWII',
+        died_location : 'bombing mission',
+        mother : 'gen0rec0',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen4rec6'
+    },
+    ],
+        children : [ {
+            recordID : 'gen0rec0'
+        },
+        {
+            recordID : 'gen0rec0'
+        },
+    ],
+},
+
+
+gen4rec35 : {
+    person : {
+        name : 'Mr. Skov',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen0rec0',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen4rec6'
+    },
+    ],
+        children : [ {
+            recordID : 'gen0rec0'
+        },
+        {
+            recordID : 'gen0rec0'
+        },
+    ],
+},
+    
+    
 gen4rec9 : {
         person : {
                 name : 'Sally Neikirk',
@@ -1962,20 +2077,100 @@ gen5rec40 : {
         },
     spouses : [
             {
-                recordID : 'gen0rec0'
+                recordID : 'gen5rec54'
             },
         ],
         children : [
             {
-                name : 'Brook Shiley',
-                recordID : 'gen0rec0'
+                recordID : 'gen7rec7'
             },
             {
-                name : 'Matthew Shiley',
-                recordID : 'gen0rec0'
+                recordID : 'gen7rec8'
             },
         ],
     },
+
+
+gen5rec54 : {
+    person : {
+        name : 'Jenny Shiley',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen0rec0',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen5rec40'
+    },
+    ],
+        children : [ {
+            recordID : 'gen7rec7'
+        },
+        {
+            recordID : 'gen7rec8'
+        },
+    ],
+},
+
+gen7rec7 : {
+    person : {
+        name : 'Brook Shiley',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen5rec54',
+        father : 'gen5rec40',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen0rec0'
+    },
+    ],
+        children : [ {
+            recordID : 'gen0rec0'
+        },
+        {
+            recordID : 'gen0rec0'
+        },
+    ],
+},
+
+gen7rec8 : {
+    person : {
+        name : 'Matthew Shiley',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen5rec54',
+        father : 'gen5rec40',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen0rec0'
+    },
+    ],
+        children : [ {
+            recordID : 'gen0rec0'
+        },
+        {
+            recordID : 'gen0rec0'
+        },
+    ],
+},
+
+
+
 
 gen5rec41 : {
         person : {
@@ -1992,20 +2187,17 @@ gen5rec41 : {
         },
     spouses : [
             {
-                name : 'Eric Moon',
-                recordID : 'gen0rec0'
+                recordID : 'gen5rec53'
             },
         ],
-        children : [
-            {
-                name : 'Calder',
-                recordID : 'gen0rec0'
-            },
-            {
-                name : 'Keegan',
-                recordID : 'gen0rec0'
-            },
-        ],
+        children : [ {
+            recordID : 'gen7rec5'
+        },
+        {
+            recordID : 'gen7rec6'
+        },
+    ],
+    
     },
 
 gen4rec26 : {
@@ -2428,7 +2620,6 @@ gen6rec9 : {
                 died_location : '',
                 mother : 'gen5rec9',
                 father : 'gen5rec27',
-                parents : 'gen5rec27',
                 about : ''
         },
     spouses:[{},],
@@ -2610,7 +2801,6 @@ gen6rec10 : {
                 died_location : '',
                 mother : 'gen5rec10',
                 father : 'gen5rec35',
-                parents : 'gen5rec10',
                 about : ''
         },
     spouses : [
@@ -2638,7 +2828,6 @@ gen6rec11 : {
                 died_location : '',
                 mother : 'gen5rec10',
                 father : 'gen5rec35',
-                parents : 'gen5rec10',
                 about : ''
         },
     spouses : [
@@ -2779,11 +2968,38 @@ gen5rec37 : {
     },
     ],
         children : [ {
-            name : 'Uriah',
+            recordID : 'gen6rec24'
+        },
+    ],
+},
+
+gen6rec24 : {
+    person : {
+            name : 'Uriah McNeil',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen0rec0',
+        father : 'gen5rec37',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen0rec0'
+    },
+    ],
+        children : [ {
+            recordID : 'gen0rec0'
+        },
+        {
             recordID : 'gen0rec0'
         },
     ],
 },
+
+
 
 gen5rec14 : {
         person : {
@@ -3075,10 +3291,8 @@ gen5rec21 : {
     children:[{},],
     },
 /*    
-Abbott is '54 and Towner is '55. Urs is right. Don't know about
-Charles. Mom is March 9 1926, Dad is November 14, 1919. On the
-other end, Dad is April 25 1974, mom is September 16, 1994, and
-Abbott is January 30 2002. 
+Don't know about
+Charles. 
 */
 gen5rec1 : {
         person : {
@@ -3202,52 +3416,6 @@ gen5rec52 : {
         },
     ],
 },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 gen5rec2 : {
         person : {
@@ -3405,7 +3573,6 @@ gen5rec6 : {
                 died_location : '',
                 mother : 'gen0rec0',
                 father : 'gen4rec2',
-                parents : 'gen4rec2',
                 about : ''
         },
     spouses : [
@@ -3446,7 +3613,6 @@ gen5rec15 : {
                 died_location : '',
                 mother : 'gen4rec19',
                 father : 'gen4rec3',
-                parents : 'gen4rec3',
                 about : ''
             },
     spouses:[{},],
@@ -3463,7 +3629,6 @@ gen5rec16 : {
                 died_location : '',
                 mother : 'gen4rec19',
                 father : 'gen4rec3',
-                parents : 'gen4rec3',
                 about : ''
         },
     spouses:[{},],
@@ -3480,7 +3645,6 @@ gen5rec17 : {
                 died_location : '',
                 mother : 'gen4rec19',
                 father : 'gen4rec3',
-                parents : 'gen4rec3',
                 about : ''
         },
     spouses:[{},],
@@ -3967,6 +4131,103 @@ gen7rec4 : {
         },
     ],
 },
+
+gen7rec5 : {
+    person : {
+        name : 'Calder Moon',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen5rec41',
+        father : 'gen5rec53',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen0rec0'
+    },
+    ],
+        children : [ {
+            recordID : 'gen0rec0'
+        },
+        {
+            recordID : 'gen0rec0'
+        },
+    ],
+},
+
+
+gen7rec6 : {
+    person : {
+        name : 'Keegan Moon',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen5rec41',
+        father : 'gen5rec53',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen0rec0'
+    },
+    ],
+        children : [ {
+            recordID : 'gen0rec0'
+        },
+        {
+            recordID : 'gen0rec0'
+        },
+    ],
+},
+
+
+gen5rec53 : {
+    person : {
+        name : 'Eric Moon',
+        born_date : '',
+        born_location : '',
+        married_date : '',
+        married_location : '',
+        died_date : '',
+        died_location : '',
+        mother : 'gen0rec0',
+        father : 'gen0rec0',
+        about : ''
+    },
+    spouses : [ {
+        recordID : 'gen5rec41'
+    },
+    ],
+        children : [ {
+            recordID : 'gen7rec5'
+        },
+        {
+            recordID : 'gen7rec6'
+        },
+    ],
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
