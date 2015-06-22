@@ -23,7 +23,10 @@ gen0rec0 : {
         about : ''
     },
     spouses : [ {
-        recordID : 'gen0rec0'
+        recordID : 'gen0rec0',
+        married_date: '',
+        married_location: '',
+        divorced_date: ''
     },
     ],
         children : [ {
@@ -73,9 +76,15 @@ gen3rec4 : {
         spouses : [
             {
                 recordID : 'gen3rec10',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
             {
                 recordID : 'gen3rec11',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -117,6 +126,9 @@ gen3rec10 : {
         spouses : [
             {
                 recordID : 'gen3rec4',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -148,6 +160,9 @@ gen3rec11 : {
             {
                 recordID : 'gen3rec4',
 
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
             {
             },
@@ -173,10 +188,16 @@ gen4rec4 : {
             },
         spouses : [
             {
-                recordID : 'gen4rec12'
+                recordID : 'gen4rec12',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
             {
-                recordID : 'gen4rec13'
+                recordID : 'gen4rec13',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -222,12 +243,21 @@ gen4rec12 : {
         spouses : [
             {
                 recordID : 'gen4rec4',            
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
             {
                 recordID : 'gen4rec31',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
             {
                 recordID : 'gen4rec32',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -274,6 +304,9 @@ gen4rec31 : {
     },
     spouses : [ {
         recordID : 'gen4rec12',
+        married_date: '',
+        married_location: '',
+        divorced_date: ''
     },
     ],
         children : [ {
@@ -301,6 +334,9 @@ gen4rec32 : {
     },
     spouses : [ {
         recordID : 'gen4rec12',
+        married_date: '',
+        married_location: '',
+        divorced_date: ''
     },
     ],
         children : [ {
@@ -353,10 +389,16 @@ gen4rec13 : {
         spouses : [
             {
                 recordID : 'gen4rec4',            
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
             {
                 name : '(?)',     
                 recordID : 'gen0rec0',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -380,7 +422,10 @@ gen4rec3 : {
         },
     spouses : [
         {
-            recordID : 'gen4rec19'
+            recordID : 'gen4rec19',
+            married_date: '',
+            married_location: '',
+            divorced_date: ''
         },
     ],
     children : [
@@ -410,7 +455,10 @@ gen4rec19 : {
         about : ''
     },
     spouses : [ {
-        recordID : 'gen4rec3'
+        recordID : 'gen4rec3',
+        married_date: '',
+        married_location: '',
+        divorced_date: ''
     },
     ],
         children : [ {
@@ -461,7 +509,10 @@ gen2rec4 : {
             },
         spouses : [
             {
-                recordID : 'gen2rec7'
+                recordID : 'gen2rec7',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -488,7 +539,10 @@ gen2rec7 : {
             },
         spouses : [
             {
-                recordID : 'gen2rec4'
+                recordID : 'gen2rec4',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -573,6 +627,9 @@ gen1rec2 : {
         spouses : [
             {
                 recordID : 'gen1rec16',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             }
         ],
         children : [
@@ -599,7 +656,10 @@ gen1rec16 : {
         about : ''
     },
     spouses : [ {
-        recordID : 'gen1rec2'
+        recordID : 'gen1rec2',
+        married_date: '',
+        married_location: '',
+        divorced_date: ''
     },
     ],
         children : [ {
@@ -650,7 +710,10 @@ gen1rec5 : {
             },
         spouses : [
             {
-                recordID : 'gen1rec9'
+                recordID : 'gen1rec9',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             }
         ],
         children : [
@@ -683,7 +746,10 @@ gen1rec5 : {
             },
         spouses : [
             {
-                recordID : 'gen1rec5'
+                recordID : 'gen1rec5',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             }
         ],
         children : [
@@ -716,7 +782,10 @@ gen1rec4 : {
             },
         spouses : [
             {
-                recordID : 'gen1rec10'
+                recordID : 'gen1rec10',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -741,7 +810,10 @@ gen1rec10 : {
                 about : 'http://homepage.mac.comh/galaher/heritage/etc.html'
     },
     spouses : [ {
-        recordID : 'gen1rec4'
+        recordID : 'gen1rec4',
+        married_date: '',
+        married_location: '',
+        divorced_date: ''
     },
     ],
         children : [ {
@@ -851,7 +923,10 @@ gen2rec3 : {
         },
     spouses : [
             {
-                recordID : 'gen2rec13'
+                recordID : 'gen2rec13',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -902,7 +977,10 @@ gen2rec13 : {
                 about : ''
     },
     spouses : [ {
-        recordID : 'gen2rec3'
+        recordID : 'gen2rec3',
+        married_date: '',
+        married_location: '',
+        divorced_date: ''
     },
     ],
         children : [ 
@@ -1022,7 +1100,10 @@ gen3rec7 : {
         },
     spouses : [
             {
-                recordID : 'gen3rec16'
+                recordID : 'gen3rec16',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -1058,7 +1139,10 @@ gen3rec16 : {
         about : '',    
         },
     spouses : [ {
-        recordID : 'gen3rec7'
+        recordID : 'gen3rec7',
+        married_date: '',
+        married_location: '',
+        divorced_date: ''
     },
     ],
         children : [ 
@@ -1162,7 +1246,10 @@ gen3rec6 : {
         },
     spouses : [
             {
-                recordID : 'gen3rec13'
+                recordID : 'gen3rec13',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
         ],
         children : [
@@ -1192,11 +1279,17 @@ gen3rec13 : {
         },
     spouses : [
             {
-                recordID : 'gen3rec6'
+                recordID : 'gen3rec6',
+                married_date: '',
+                married_location: '',
+                divorced_date: ''
             },
             {
         name : 'Remarried. Need to look up',
-        recordID : 'gen0rec0'
+        recordID : 'gen0rec0',
+        married_date: '',
+        married_location: '',
+        divorced_date: ''
             },
         ],
         children : [
@@ -1337,8 +1430,6 @@ gen4rec1 : {
                 name : 'Cornelia Miller Menefee',
                 born_date : 'March 9, 1926',
                 born_location : 'Portland OR',
-                married_date : 'Dec 29, 1951',
-                married_location : '',
                 died_date : 'September 16, 1994',
                 died_location : 'Kailua HI.',
                 mother : 'gen3rec10',
@@ -1347,13 +1438,22 @@ gen4rec1 : {
         },
     spouses : [
             {
-                recordID : 'gen4rec18'
+                recordID : 'gen4rec18',
+                married_date: 'Dec 29, 1951',
+                married_location: 'Portland OR',
+                divorced_date: '197?'
             },
                         {
-                recordID : 'gen4rec23'
+                recordID : 'gen4rec23',
+                married_date: '1976?',
+                married_location: 'Portland OR',
+                divorced_date: '1978?'
             },
                         {
-                recordID : 'gen4rec7'
+                recordID : 'gen4rec7',
+                married_date: '1981?',
+                married_location: 'Kilua HI',
+                divorced_date: '1987?'
             },
         ],
         children : [
@@ -3503,8 +3603,6 @@ gen5rec4 : {
                 name : 'Matthew Adams Galaher',
                 born_date : 'April 5, 1963',
                 born_location : 'Portland OR',
-                married_date : '',
-                married_location : '',
                 died_date : '',
                 died_location : '',
                 mother : 'gen4rec1',
@@ -3513,7 +3611,10 @@ gen5rec4 : {
         },
     spouses : [
             {
-                recordID : 'gen5rec33'
+                recordID : 'gen5rec33',
+                married_date: 'Aug 8, 1998',
+                married_location: 'Clackamas OR',
+                divorced_date: ''
             },
         ],
         children : [
