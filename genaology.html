@@ -121,6 +121,13 @@ width: 100%;
 a{
 text-decoration:none;
 }
+
+.bookends{
+    font-size: 0.75em;
+    margin-top:-1em;
+    padding-top:0px;
+}
+
 .offspring {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -291,6 +298,20 @@ function assembColumn(primKey,relation,callingRecID){
     resetTree(primKey,relation,callingRecID);// Is this click a child, spouse or parent?
 
     var personName = treeDB[primKey].person.name;
+    
+// check for and if present print birth, birth location, death & death location:
+var personBornDate = (typeof treeDB[primKey].person.born_date === "undefined" || treeDB[primKey].person.born_date === "") ? "" : treeDB[primKey].person.born_date;
+var personBornLocation  = (typeof treeDB[primKey].person.born_location === "undefined" || treeDB[primKey].person.born_location === "") ? "" : treeDB[primKey].person.born_location;
+var personDeathDate = (typeof treeDB[primKey].person.died_date === "undefined" || treeDB[primKey].person.died_date === "") ? "" : treeDB[primKey].person.died_date;
+var personDeathLocation = (typeof treeDB[primKey].person.died_location === "undefined" || treeDB[primKey].person.died_location === "") ? "" : treeDB[primKey].person.died_location;
+
+// alert(personBornDate);
+
+
+
+
+
+
 
     //Build spouces
     var numSpouses = treeDB[primKey].spouses.length;
@@ -316,7 +337,7 @@ function assembColumn(primKey,relation,callingRecID){
             }else{
                 spousesHTML = spousesHTML + '<h1><a href="#" name="' + spouseLookUp + '"  onClick="assembColumn(this.name,\'spouse\',\'' + primKey + '\');">' + treeDB[spouseLookUp].person.name + '</a></h1>';
             }
-        }         
+        }
     }
 
     //Build children
@@ -393,8 +414,25 @@ function assembColumn(primKey,relation,callingRecID){
 
     // Build Inner HTML:
     
+var printBirthData;
 
-    var innerHperson = '<article class="column" id="' + primKey + '"><header><h1>' + personName	+ '</h1>' + 'birthDeathDates' + '<p class="parents">' + motherHTML + ' ' + fatherHTML + ' | about</p></header>';
+if(personBornDate === '' && personBornLocation === ''){
+    printBirthData = '';
+} else {
+    printBirthData = 'b ' + personBornDate + ' ' + personBornLocation + '<br>';
+}
+
+if(personDeathDate === '' && personDeathLocation === ''){
+    printDeathData = '';
+} else {
+    printDeathData = 'd ' + personDeathDate + ' ' + personDeathLocation;
+}
+
+
+var bookends = printBirthData + printDeathData;
+
+
+    var innerHperson = '<article class="column" id="' + primKey + '"><header><h1>' + personName	+ '</h1>' + '<p class="bookends">' + bookends + '</p>' + '<p class="parents">' + motherHTML + ' ' + fatherHTML + ' | about</p></header>';
     var innerHspouses = '<section class="spouse">' + spousesHTML;
     var innerHchildren =  '</section><hr><footer><h1 class="children">Children</h1>' + childrenHTML + '</footer></article>';
     var innerH = innerHperson + innerHspouses + innerHchildren;
